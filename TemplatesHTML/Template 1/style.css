@@ -46,7 +46,7 @@
     grid-area: m2;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 40vh auto 10vh; /* 70 vh*/
-    grid-template-areas: "divp1 divp1" "b1 b2" "p2 p3" "redbox redbox";
+    grid-template-areas: "divp1 divp1" "b1 b2" "p2 p3" "redbox1 redbox2";
 }
 
 .grid-item-divp1{
@@ -84,25 +84,49 @@
     text-align: center;
 }
 
-.container-redbox{
-    grid-area: redbox;
-    display: flex;
-    justify-content: space-around;
-}
-
 .grid-item-redbox1{
     background-color: rgb(196, 84, 84);
     flex-basis: 15%;
     height: 60%;
+    margin: 0px 30vh;
+    grid-area: redbox1;
 }
 
 .grid-item-redbox2{
     background-color: rgb(196, 84, 84);
     flex-basis: 15%;
     height: 60%;
+    margin: 0px 30vh;
+    grid-area: redbox2;
 }
 
 .container-griditem-footer{
     background-color: brown;
     grid-area: footer;
+} /* não faz parte do conteiner main2*/
+
+@media (max-width: 600px){
+    .grid-item-redbox1{
+        background-color: rgb(196, 84, 84);
+        flex-basis: 15%;
+        margin: 0px 30vh;
+        height: 60%;
+        grid-area: redbox1;
+    }
+    
+    .grid-item-redbox2{
+        background-color: rgb(196, 84, 84);
+        flex-basis: 15%;
+        height: 60%;
+        margin: 0px 30vh;
+        grid-area: redbox2;
+    }
+    
+    .container-griditem-main2{
+        grid-template-rows: auto 40vh auto 10vh 40vh auto 10vh; /* 70 vh*/
+        grid-template-areas: "divp1 divp1" "b1 b1" "p2 p2" "redbox1 redbox1" "b2 b2" "p3 p3" "redbox2 redbox2";
+    }
 }
+    
+
+/* boxes com 40vh e redbox com 10vh - div 1 nao muda do lugar*/
