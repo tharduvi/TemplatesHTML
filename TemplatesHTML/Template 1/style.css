@@ -5,13 +5,14 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: Roboto;
+    text-decoration: none;
 }
 
 .container-grid-principal{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 20vh 70vh auto 10vh;
-    grid-template-areas: "header header" "m1 m1" "m2 m2" "footer footer";
+    grid-template-areas: "header header" "m1 m1" "m2 m2" "f f";
 
 }
 
@@ -28,6 +29,15 @@
     flex-shrink: 0;
     height: 60%;
     background-color: rgb(196, 84, 84);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-griditem-header-nav a{
+    color: whitesmoke;
+    flex-shrink: 0;
+    font-size: large
 }
 
 .container-griditem-main1{
@@ -86,42 +96,28 @@
 
 .grid-item-redbox1{
     background-color: rgb(196, 84, 84);
-    flex-basis: 15%;
+    
     height: 60%;
-    margin: 0px 30vh;
+    width: 50%;
+    margin: 0px auto;
     grid-area: redbox1;
 }
 
 .grid-item-redbox2{
     background-color: rgb(196, 84, 84);
-    flex-basis: 15%;
     height: 60%;
-    margin: 0px 30vh;
+    width: 50%;
+    margin: 0px auto;
     grid-area: redbox2;
 }
 
 .container-griditem-footer{
     background-color: brown;
-    grid-area: footer;
-} /* não faz parte do conteiner main2*/
+    grid-area: f;
+    height: 20vh;
+}
 
 @media (max-width: 600px){
-    .grid-item-redbox1{
-        background-color: rgb(196, 84, 84);
-        flex-basis: 15%;
-        margin: 0px 30vh;
-        height: 60%;
-        grid-area: redbox1;
-    }
-    
-    .grid-item-redbox2{
-        background-color: rgb(196, 84, 84);
-        flex-basis: 15%;
-        height: 60%;
-        margin: 0px 30vh;
-        grid-area: redbox2;
-    }
-    
     .container-griditem-main2{
         grid-template-rows: auto 40vh auto 10vh 40vh auto 10vh; /* 70 vh*/
         grid-template-areas: "divp1 divp1" "b1 b1" "p2 p2" "redbox1 redbox1" "b2 b2" "p3 p3" "redbox2 redbox2";
