@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+.container-grid-principal{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20vh 70vh auto 10vh;
+    grid-template-areas: "header header" "m1 m1" "m2 m2" "footer footer";
+
+}
+
+.container-griditem-header{
+    background-color: whitesmoke;
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-griditem-header-nav{
+    flex-basis: 40vh;
+    flex-shrink: 0;
+    height: 60%;
+    background-color: rgb(196, 84, 84);
+}
+
+.container-griditem-main1{
+    background-color: rgb(39, 177, 131);
+    grid-area: m1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: whitesmoke;
+}   
+
+.container-griditem-main2{
+    display: grid;
+    grid-area: m2;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 40vh auto 10vh; /* 70 vh*/
+    grid-template-areas: "divp1 divp1" "b1 b2" "p2 p3" "redbox redbox";
+}
+
+.grid-item-divp1{
+    grid-area: divp1;
+    color: rgb(78, 75, 75);
+    margin: 5vh 5vh 8vh 5vh;
+    text-align: center;
+    min-width: 50vw;
+    
+}
+
+.grid-item-box1{
+    grid-area: b1;
+    background-color: rgb(39, 177, 131);
+    margin: 1.5vh;
+}
+
+.grid-item-box2{
+    grid-area: b2;
+    background-color: rgb(39, 177, 131);
+    margin: 1.5vh;
+}
+
+.grid-item-p2{
+    grid-area: p2;
+    color: rgb(78, 75, 75);
+    margin: 5vh 5vh;
+    text-align: center;
+}
+
+.grid-item-p3{
+    grid-area: p3;
+    color: rgb(78, 75, 75);
+    margin: 5vh 5vh;
+    text-align: center;
+}
+
+.container-redbox{
+    grid-area: redbox;
+    display: flex;
+    justify-content: space-around;
+}
+
+.grid-item-redbox1{
+    background-color: rgb(196, 84, 84);
+    flex-basis: 15%;
+    height: 60%;
+}
+
+.grid-item-redbox2{
+    background-color: rgb(196, 84, 84);
+    flex-basis: 15%;
+    height: 60%;
+}
+
+.container-griditem-footer{
+    background-color: brown;
+    grid-area: footer;
+}
