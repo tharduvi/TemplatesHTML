@@ -140,6 +140,10 @@ a:active{
     border-radius: 10px;
 }
 
+.mainboxes-content img{
+    max-width: 100%;
+}
+
 @media (max-width: 860px){
     .main-paragrf-principal{
         padding: 5px;
