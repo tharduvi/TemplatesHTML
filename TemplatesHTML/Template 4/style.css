@@ -1,0 +1,222 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  font-family: 'Open Sans Condensed';
+
+  /*box-sizing: border-box; será que conflita com o tamanho das imagens nos cards?*/
+}
+
+a:link {
+  color: rgb(73, 78, 82);
+}
+
+a:visited {
+  color: rgb(73, 78, 82);
+}
+
+a:hover {
+  color: rgb(28, 29, 31);
+  background-color: rgba(71, 68, 68, 0.212);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.conteiner-grid-main-principal {
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 'header' 'main' 'footer';
+}
+
+.container-header {
+  grid-area: header;
+  background-color: whitesmoke;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+
+  box-sizing: border-box;
+}
+
+.header-conteiner-logo {
+  font-size: 3rem;
+  color: rgb(73, 78, 82);
+}
+
+.header-conteiner-menu{
+    text-align: center;
+}
+
+.header-conteiner-menu a {
+  margin: 10px;
+  padding: 0.5rem;
+  width: 30vw;
+  font-size: 20px;
+  border-radius: 100%;
+}
+
+.header-menu a {
+  margin: 0px 5%;
+}
+
+.container-grid-main-principal {
+  grid-area: main;
+  min-height: 80vh;
+  background-color: whitesmoke;
+
+  border-top: 2px solid slategray;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-titles {
+  text-align: center;
+  min-height: 20vh;
+}
+
+#main-title-subtitle {
+  margin-top: 15%;
+  font-size: 1rem;
+  color: slategray;
+}
+
+#main-title-bigtitle {
+  font-size: 2.7rem;
+  color: rgb(73, 78, 82);
+}
+
+.main-section {
+  min-height: 60vh;
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-conteiner {
+  width: 10%;
+  min-width: 300px;
+  min-height: 40vh;
+
+  margin: 15px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-conteiner img {
+  width: 100%;
+  height: 70%;
+  border: 1px solid slategray;
+  margin-bottom: 7px;
+}
+
+.card-conteiner p {
+  color: slategray;
+  margin: 1.5px;
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.781);
+  padding: 0.5px 4rem;
+  border-radius: 3px;
+}
+
+.container-footer {
+  grid-area: footer;
+  border-top: 2px solid slategray;
+  min-height: 30vh;
+
+  background-color: whitesmoke;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  box-sizing: border-box;
+}
+
+.logo-footer {
+  margin-top: 25px;
+  border: 2px solid slategray;
+  border-radius: 5%;
+  padding: 0px 65px 0px 0.5px;
+
+  font-size: 13px;
+  color: rgb(73, 78, 82);
+}
+
+.conteiner-footer-final {
+  margin-top: 30px;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(40, 73, 100);
+}
+
+.footer-final-menu {
+  margin-bottom: 10px;
+  padding: 12px;
+  font-size: 2rem;
+  align-self: flex-start;
+  text-align: center;
+}
+
+.footer-final-menu a {
+  margin: 10px;
+}
+
+.conteiner-itens-footerfinal {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  width: 90%;
+  margin-bottom: 10px;
+}
+
+.footerfinal-texts {
+  width: 25%;
+  height: auto;
+  min-width: 40%;
+  flex-grow: 1;
+
+  padding: 12px;
+  margin: 10px 10px 0px 0px;
+
+  color: slategray;
+  color: whitesmoke;
+  background-color: rgba(0, 0, 0, 0.781);
+  border-radius: 3px;
+}
+
+@media (max-width: 660px) {
+  .main-section {
+    min-height: 60vh;
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .header-conteiner-logo {
+    margin: 0px auto;
+    font-size: 3rem;
+    color: rgb(73, 78, 82);
+  }
+
+  .container-header {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-conteiner-menu a {
+    text-align: center;
+  }
+}
