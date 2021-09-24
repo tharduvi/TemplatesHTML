@@ -36,6 +36,11 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  border-bottom-style: solid;
+  border-color: rgb(88, 87, 87);
+  border-width: 3px;
+
 }
 
 .header-conteiner-logo {
@@ -64,6 +69,7 @@ a:hover {
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
   grid-template-areas: 'section1' 'section2';
+
 }
 
 .main-conteiner-section1 {
@@ -78,6 +84,10 @@ a:hover {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+
+  border-bottom-style: solid;
+  border-color: rgb(88, 87, 87);
+  border-width: 1px;
 }
 
 .section1-video {
@@ -125,7 +135,7 @@ iframe {
   width: 30%;
   min-width: 270px;
   margin: 20px;
-  background-color: rgba(0, 162, 255, 0.527);
+  background-color: rgb(179, 179, 179);
   padding: 10px;
   border-radius: 15px 70px;
   overflow: hidden;
@@ -150,6 +160,10 @@ iframe {
   min-height: 30vh;
   height: auto;
   background-color: rgb(163, 163, 163);
+
+  border-top-style: solid;
+  border-color: rgb(88, 87, 87);
+  border-width: 2px;
 }
 
 @media (max-width: 967px) {
