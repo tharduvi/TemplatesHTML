@@ -24,8 +24,8 @@ a:hover {
 
 .conteiner-grid-main-principal {
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto;
-  grid-template-areas: 'header' 'main' 'footer';
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: 'header' 'main' 'subfooter' 'footer';
 }
 
 .container-header {
@@ -127,8 +127,8 @@ a:hover {
   border-radius: 3px;
 }
 
-.container-footer {
-  grid-area: footer;
+.container-subfooter {
+  grid-area: subfooter;
   border-top: 2px solid slategray;
   min-height: 30vh;
 
@@ -151,7 +151,7 @@ a:hover {
   color: rgb(73, 78, 82);
 }
 
-.conteiner-footer-final {
+.conteiner-subfooter-final {
   margin-top: 30px;
   align-self: center;
   display: flex;
@@ -159,9 +159,10 @@ a:hover {
   justify-content: center;
   align-items: center;
   color: rgb(40, 73, 100);
+  padding: 30px;
 }
 
-.footer-final-menu {
+.subfooter-final-menu {
   margin-bottom: 10px;
   padding: 12px;
   font-size: 2rem;
@@ -169,11 +170,11 @@ a:hover {
   text-align: center;
 }
 
-.footer-final-menu a {
+.subfooter-final-menu a {
   margin: 10px;
 }
 
-.conteiner-itens-footerfinal {
+.conteiner-itens-subfooterfinal {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
@@ -181,7 +182,7 @@ a:hover {
   margin-bottom: 10px;
 }
 
-.footerfinal-texts {
+.subfooterfinal-texts {
   width: 25%;
   height: auto;
   min-width: 40%;
@@ -194,6 +195,16 @@ a:hover {
   color: whitesmoke;
   background-color: rgba(0, 0, 0, 0.781);
   border-radius: 3px;
+}
+
+footer{
+  min-height: 20vh;
+  background-color: rgba(0, 0, 0, 0.781);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  font-size: 2rem;
 }
 
 @media (max-width: 660px) {
